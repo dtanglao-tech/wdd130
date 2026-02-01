@@ -101,7 +101,7 @@ footer p {
 .history {
     padding: 20px;
     background-color: var(--background-color);
-    color: white;
+    color: var(--text-color);
     border-radius: .3rem;
 }
 
