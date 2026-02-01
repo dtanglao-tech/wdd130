@@ -45,10 +45,10 @@ nav a {
   text-decoration: none;
   padding: 10px 20px;
   border: 1px solid #000;
-  background-color: rgba(112, 135, 240, 0.453);
-  color: var(--secondary-color);
+  background-color: var(--accent1-color);
+  color: var(--text-color);
   border-radius: .5rem;
-}
+}   
 
 header, main, footer {
     max-width: 1300px;
