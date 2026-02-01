@@ -34,8 +34,7 @@ header img {
 
 nav ul {
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(4, auto);
+  display: flex;
   gap: 10px;
   justify-content: center;
 }
