@@ -1,0 +1,63 @@
+/* Import a clean modern font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    letter-spacing: 0.5px;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Table cells */
+th, td {
+    border: 1px solid rgb(150 150 150);
+    padding: 12px 18px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header & footer */
+thead th,
+tfoot tr {
+    background-color: rgb(0 0 0);
+    color: white;
+    font-weight: 700;
+}
+
+/* Sticky header (optional but cool) */
+thead th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+/* Alternating row colors */
+tbody tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Hover effect */
+tbody tr:hover {
+    background-color: #7d82804a;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Slight emphasis on hovered row text */
+tbody tr:hover td {
+    font-weight: 600;
+}
+
+/* Footer style tweak */
+tfoot td {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
