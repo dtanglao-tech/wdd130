@@ -2,17 +2,29 @@
 <html lang="en">
 
 <head>
-
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | White Water Rafting</title>
+    <meta name="description"
+        content="Contact White Water Rafting to ask questions, request trip information, 
+        or learn more about our rafting adventures and services.">
+    <meta name="author" content="Daniel Tanglao">
+    
+    <link rel="stylesheet" href="styles/poll-form.css">
 </head>
 
 <body>
     <header>
         <caption>WDD 130 | HTML Form - User Poll</caption>
         <form>
-            <label for="user'sfullname">Full Name:</label>
-            <input type="text" id="fullname" name="fullname" required>
-            <label for="user'semailaddress">Email Address:</label>
-            <input type="text" id="useremail" name="useremail" required>
+            <div class="form-item column2">
+                <label for="user'sfullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-item column2">
+                <label for="user'semailaddress">Email Address:</label>
+                <input type="text" id="useremail" name="useremail" required>
+            </div>
 
             <label for="favoritebrowser">What is your Favorite Browser?</label>
             <select name="color" id="color">
@@ -34,28 +46,7 @@
 
 
     <main>
-        <form>
-            <h1>to: Mozilla</h1>
-
-            <div id="from">
-                <label for="name">from:</label>
-                <input type="text" id="name" name="user_name" />
-            </div>
-
-            <div id="reply">
-                <label for="mail">reply:</label>
-                <input type="email" id="mail" name="user_email" />
-            </div>
-
-            <div id="message">
-                <label for="msg">Your message:</label>
-                <textarea id="msg" name="user_message"></textarea>
-            </div>
-
-            <div class="button">
-                <button type="submit">Send your message</button>
-            </div>
-        </form>
+    
     </main>
 
 

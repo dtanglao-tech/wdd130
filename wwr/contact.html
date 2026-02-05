@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | White Water Rafting</title>
+    <meta name="description"
+        content="Contact White Water Rafting to ask questions, request trip information, 
+        or learn more about our rafting adventures and services.">
+    <meta name="author" content="Daniel Tanglao">
+    
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="White Water Rafting">
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <section class="company-info">
+            <h1>White Water Rafting</h1>
+            <p>123 Main River Street</p>
+            <p>Kolob, California</p>
+            <p>+63 123 456 7891</p>
+            <p>info@whitewater.com</p>
+        </section>
+
+        <section class="contact-content">
+            <div class="map">   
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3186.819331447556!2d-122.03157849999998!3d36.9902455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e40498846decd%3A0x400efe3aaff1f1ce!2sRiver%20St%2C%20California%2095060%2C%20USA!5e0!3m2!1sen!2sph!4v1770297794501!5m2!1sen!2sph" 
+                        width="100%"
+                        height="540"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">       
+                </iframe>
+            </div>
+        
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="user@gmail.com" required>
+            </div>
+
+            <fieldset class="form-group">
+                <legend>Message Purpose</legend>
+                <label>
+                <input type="radio" id="general" name="purpose" value="general" checked>
+                General Inquiry
+                </label>
+
+                <label>
+                <input type="radio" id="reservation" name="purpose" value="reservation">
+                Reservation Question
+                </label>
+
+                <label>
+                <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                Website Suggestion
+                </label>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Type here..."></textarea>
+            </div>
+            <div class="newsletter">
+                <label>
+                    <input type="checkbox" name="newsletter">
+                    Please subscribe me to the monthly newsletter
+                </label>
+            </div>
+
+            <button type="submit">Get in Touch!</button>
+        </form>
+       </section>
+
+       <section class="service">
+            <h2>We Are Here to Serve You!</h2>
+            <div class="service-grid">
+                <figure>
+                    <img src="images/emp1.webp" alt="Employee number1">
+                    <figcaption>Employee Profile</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/emp3.webp" alt="Employee number2">
+                    <figcaption>Employee Profile</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/emp2.webp" alt="Employee number3">
+                    <figcaption>Employee Profile</figcaption>
+                </figure>
+            </div>
+       </section>
+    </main>
+
+    <footer>
+        <p>©️2026 🛶White Water Rafting🛶 Daniel Tanglao</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook-square.svg" alt="Facebook Icon"></a>
+            <a href="https://instagram.com">
+                <img src="images/instagram-square.svg" alt="instagram Icon"></a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin-square.svg" alt="linkedin Icon"></a>    
+        </nav>
+    </footer>
+</body>
+
+</html>
