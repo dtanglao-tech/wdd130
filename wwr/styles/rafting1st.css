@@ -1,0 +1,177 @@
+:root {
+  --primary-color: #b2d0b2; 
+  --accent1-color: #264653;
+  --text-color: #fff;
+  --background-color: #224958ea;
+  --heading-font: "Times New Roman", "Georgia", serif;
+  --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: var(--primary-color);
+}
+
+header {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  align-items: center;
+  padding: 20px;
+}
+
+header img {
+    border-radius: .5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  background-color: var(--accent1-color);
+  color: var(--text-color);
+  border-radius: .5rem;
+}   
+
+header, main, footer {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--text-color);
+    padding: 13px;
+    text-align: center;
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+figure img {
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+
+footer {
+    max-width: 1300px;
+    margin: 20px auto 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* "Class Selectors" */
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: var(--text-color);
+}
+
+.history {
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-radius: .3rem;
+}
+
+.history img {
+    width: 100%;
+}
+
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.adventure {
+    padding: 20px;
+    background-color: var(--background-color);
+    color: white;
+    border-radius: .3rem;
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    text-align: center;
+    place-items: center;
+}
+
+.adventure-grid img {
+    width: 200px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+    margin: 1px;
+}
+
+.socialmedia img {
+    display: flex;
+    flex-direction: column;
+    width: 32px;
+}
+
+.hero {
+    position: relative;
+    max-width: 1300px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero article img {
+    float: right;
+    width: 155px;
+    border-radius: 10px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 230px;
+    left: 20px;
+    right: 20px;
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 13px;
+    opacity: 0.9;
+    border-radius: 15px;
+}
