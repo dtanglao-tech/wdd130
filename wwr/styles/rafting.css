@@ -137,7 +137,9 @@ footer {
 }
 
 .map iframe {
-  border: 0;
+    width: 100%;
+    max-width: 100%;
+    border: 0;
 }
 
 .contact-page {
@@ -163,11 +165,6 @@ footer {
   align-items: start;
 }
 
-.map img {
-  border-radius: 6px;
-  height: 540px;
-}
-
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -187,7 +184,6 @@ footer {
   margin-bottom: 0.25rem;
   font-weight: bold;
 }
-
 
 .newsletter label {
   display: flex;
