@@ -227,3 +227,58 @@ h2 {
   flex-direction: column;
   width: 30px;
 }
+
+.trips-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.trip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.trip.reverse {
+  direction: rtl;
+}
+
+.trip.reverse .trip-content {
+  direction: ltr;
+}
+
+.trip img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.cta {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #264653;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.trip-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.trip-table th,
+.trip-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
