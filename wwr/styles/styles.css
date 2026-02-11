@@ -1,0 +1,231 @@
+:root {
+    --primary-color: #b2d0b2;
+    --accent1-color: #264653;
+    --text-color: #ffffff;
+    --background-color: #224958ea;
+    --box-shadow: #0f0f0fea;
+    --transition-effect: #052d1f;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: var(--primary-color);
+}
+
+/* ================================
+   header (Same across all pages)
+================================ */
+header {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header img {
+    border-radius: .5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    background-color: var(--text-color);
+    color: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+nav ul.navigation li a:hover {
+    color: var(--primary-color);
+}
+
+header,
+main,
+footer {
+    max-width: 1343px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+p {
+    font-family: var(--heading-font);
+    color: var(--text-color);
+    padding: 3px;
+    text-align: center;
+}
+
+main h1 {
+    color: var(--accent1-color)
+}
+
+/* ================================
+   hero section
+================================ */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--text-color);
+}
+
+/* ================================
+   CALL TO ACTION
+================================ */
+.cta {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 12px 24px;
+    background-color: var(--text-color);
+    color: var(--accent1-color);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    box-shadow: inset 2px 2px 5px var(--text-color),
+        inset -2px -2px 5px var(--box-shadow);
+}
+
+.cta-button:hover {
+    background-color: var(--transition-effect);
+    color: var(--text-color);
+}
+
+/* ================================
+   GRID LAYOUT (Required)
+================================ */
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.grid-item {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--box-shadow);
+    text-align: center;
+}
+
+.grid-item h3 {
+    color: var(--accent1-color);
+    margin: 1rem 0;
+}
+
+/* ================================
+   NEWSLETTER
+================================ */
+.newsletter {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: var(--text-color);
+    border-radius: 8px;
+    margin: 2rem;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* ================================
+   FORM ELEMENTS
+================================ */
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--box-shadow);
+    border-radius: 4px;
+}
+
+button {
+    font-size: 1rem;
+    padding: 0.75rem;
+    cursor: pointer;
+    background-color: var(--accent1-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px var(--box-shadow);
+}
+
+button:hover {
+    background-color: var(--transition-effect);
+    box-shadow: inset 2px 2px 5px var(--box-shadow),
+        inset -2px -2px 5px var(--text-color);
+}
+
+/* ================================
+   FOOTER (Same across site)
+================================ */
+footer {
+    margin: 20px auto 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+    margin: 1px;
+}
+
+.socialmedia img {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+}

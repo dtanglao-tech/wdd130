@@ -1,10 +1,12 @@
 :root {
-  --primary-color: #b2d0b2; 
-  --accent1-color: #264653;
-  --text-color: #fff;
-  --background-color: #224958ea;
-  --heading-font: "Times New Roman", "Georgia", serif;
-  --body-font: Arial, Helvetica, sans-serif;
+    --primary-color: #b2d0b2;
+    --accent1-color: #264653;
+    --text-color: #fff;
+    --background-color: #224958ea;
+    --shadow-color: #11191dea;
+    --transition-effect: #052d1f;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -20,12 +22,13 @@ body {
 }
 
 header {
-  max-width: 1300px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr ;
-  align-items: center;
-  padding: 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 header img {
@@ -33,46 +36,61 @@ header img {
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  gap: 10px;
-  justify-content: center;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+nav ul.navigation li a:hover {
+    color: var(--transition-effect);
+    box-shadow: inset 2px 2px 5px var(--text-color),
+        inset -2px -2px 5px var(--box-shadow);
 }
 
 nav a {
-  text-decoration: none;
-  padding: 10px 20px;
-  border: 1px solid #000;
-  background-color: var(--accent1-color);
-  color: var(--text-color);
-  border-radius: .5rem;
-}   
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    background-color: var(--text-color);
+    color: var(--shadow-color);
+    border-radius: .5rem;
+}
 
-header, main, footer {
-    max-width: 1300px;
+header,
+main,
+footer {
+    max-width: 1343px;
     margin: 0 auto;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: var(--heading-font);
     color: var(--text-color);
     padding: 13px;
     text-align: center;
+    font-size: 35px;
 }
 
-nav, p, section, article {
+article img {
+    box-shadow: 5px 5px 5px var(--shadow-color);
+}
+
+nav,
+p,
+section,
+article {
     margin: 16px;
     padding: 8px;
 }
 
 figure img {
     border-radius: 1rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-
 footer {
-    max-width: 1300px;
     margin: 20px auto 0;
     padding: 10px;
     display: flex;
@@ -87,14 +105,14 @@ footer p {
 
 /* "Class Selectors" */
 .hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: var(--text-color);
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: var(--text-color);
 }
 
 .history {
