@@ -3,7 +3,7 @@
 ============================= */
 
 :root {
-  --primary-color: #b2d0b2;
+  --primary-color: #9fc29f;
   --accent1-color: #264653;
   --text-color: #ffffff;
   --background-color: #224958ea;
@@ -123,6 +123,8 @@ p {
 
 .hero img {
   width: 100%;
+  height: auto;
+  display: block;
 }
 
 .hero h1 {
@@ -179,12 +181,37 @@ p {
   color: var(--text-color);
 }
 
+nav a:focus,
+nav a:focus-visible {
+  outline: 2px solid var(--text-color);
+  outline-offset: 2px;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px solid var(--transition-effect);
+  outline-offset: 2px;
+}
+
+.cta-button:focus,
+.cta-button:focus-visible {
+  outline: 2px solid var(--accent1-color);
+  outline-offset: 2px;
+}
+
 /* HOME GRID */
 .home-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   padding: 2rem;
+}
+
+/* FIX: Add responsive layout for screens below 768px (prevent layout break) */
+@media (max-width: 768px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .grid-item {
@@ -260,6 +287,16 @@ button:hover {
   margin-bottom: 50px;
 }
 
+/* FIX: Add responsive layout for screens below 768px (prevent layout break on mobile) */
+@media (max-width: 768px) {
+  .trip {
+    grid-template-columns: 1fr;
+  }
+  .trip.reverse {
+    direction: ltr;
+  }
+}
+
 .trip.reverse {
   direction: rtl;
 }
@@ -324,6 +361,13 @@ tbody tr:hover {
   align-items: start;
 }
 
+/* FIX: Add responsive layout for screens below 768px (prevent layout break on mobile) */
+@media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -350,10 +394,11 @@ tbody tr:hover {
   margin-top: 0.5rem;
 }
 
+/* FIX: Removed redundant max-width: 100% (already set by width: 100%) */
+/* FIX: Changed fixed height to aspect-ratio for responsive embeds (mobile-friendly) */
 .map iframe {
   width: 100%;
-  max-width: 100%;
-  height: 665px;
+  aspect-ratio: 16 / 9;
   border: 0;
 }
 
