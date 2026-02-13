@@ -1,3 +1,8 @@
+/*  for about us page */
+
+/* ============================= 
+            VARIABLES 
+============================= */
 :root {
     --primary-color: #b2d0b2;
     --accent1-color: #264653;
@@ -9,11 +14,20 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
+/* ============================= 
+            RESET 
+============================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/* ============================= 
+LAYOUT (Header, Footer) 
+============================= */
 
 body {
     font-family: var(--body-font);
@@ -22,7 +36,6 @@ body {
 }
 
 header {
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -32,7 +45,7 @@ header {
 }
 
 header img {
-    border-radius: .5rem;
+    border-radius: 0.5rem;
 }
 
 nav ul {
@@ -42,20 +55,20 @@ nav ul {
     justify-content: center;
 }
 
-nav ul.navigation li a:hover {
-    color: var(--transition-effect);
-    box-shadow: inset 2px 2px 5px var(--text-color),
-        inset -2px -2px 5px var(--box-shadow);
-}
-
 nav a {
     text-decoration: none;
     padding: 10px 20px;
     border: 1px solid #000;
     background-color: var(--text-color);
     color: var(--shadow-color);
-    border-radius: .5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
 }
+
+ nav a:hover {
+  background-color: var(--transition-effect);
+  color: var(--text-color);
+ }
 
 header,
 main,
@@ -64,8 +77,79 @@ footer {
     margin: 0 auto;
 }
 
-h1,
-h2 {
+footer {
+  margin: 20px auto 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+footer p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+    margin: 1px;
+}
+
+.socialmedia img {
+    width: 30px;
+}
+
+/* =============================
+    COMPONENTS (Hero, CTA) 
+============================= */
+
+/* About Page */
+.hero {
+    position: relative;
+    max-width: 1343px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.hero article {
+    position: absolute;
+    bottom: 230px;
+    left: 20px;
+    right: 20px;
+    background-color:var(--background-color);
+    color:var(--text-color);
+    padding: 13px;
+    border-radius: 15px;
+}
+
+.hero article img {
+    float: right;
+    width: 155px;
+    border-radius: 10px;
+}
+
+/* ============================= 
+        PAGE SPECIFIC 
+============================= */
+h1, h2 {
     font-family: var(--heading-font);
     color: var(--text-color);
     padding: 13px;
@@ -73,16 +157,15 @@ h2 {
     font-size: 35px;
 }
 
-article img {
-    box-shadow: 5px 5px 5px var(--shadow-color);
+p {
+    font-family: var(--heading-font);
+    color: var(--text-color);
+    padding: 13px;
+    text-align: center;
 }
 
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
+article img {
+    box-shadow: 5px 5px 5px var(--shadow-color);
 }
 
 figure img {
@@ -90,36 +173,17 @@ figure img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-footer {
-    margin: 20px auto 0;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--primary-color);
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
 }
 
-footer p {
-    margin: 0;
-}
-
-/* "Class Selectors" */
-.hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: var(--text-color);
-}
-
+/* History Section */
 .history {
     padding: 20px;
     background-color: var(--background-color);
     color: var(--text-color);
-    border-radius: .3rem;
+    border-radius: 0.3rem;
 }
 
 .history img {
@@ -133,11 +197,12 @@ footer p {
     align-items: center;
 }
 
+/* Adventure Section */
 .adventure {
     padding: 20px;
     background-color: var(--background-color);
     color: white;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
 }
 
 .adventure-grid {
@@ -152,44 +217,4 @@ footer p {
     width: 200px;
 }
 
-.socialmedia {
-    display: flex;
-    gap: 15px;
-    text-decoration: none;
-    margin: 1px;
-}
 
-.socialmedia img {
-    display: flex;
-    flex-direction: column;
-    width: 32px;
-}
-
-.hero {
-    position: relative;
-    max-width: 1300px;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero article img {
-    float: right;
-    width: 155px;
-    border-radius: 10px;
-}
-
-.hero article {
-    position: absolute;
-    bottom: 230px;
-    left: 20px;
-    right: 20px;
-    background-color: var(--accent1-color);
-    color: white;
-    padding: 13px;
-    opacity: 0.9;
-    border-radius: 15px;
-}
